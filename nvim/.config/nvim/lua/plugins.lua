@@ -57,6 +57,9 @@ return require('packer').startup(function()
   -- auto taging
   use "windwp/nvim-ts-autotag"  -- TODO play with autotag config
 
+  -- Latex preview
+  use "xuhdev/vim-latex-live-preview"
+
   -- Telescope TODO play with Telescoping Jonson
 end)
 

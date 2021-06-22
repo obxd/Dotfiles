@@ -15,6 +15,7 @@ require 'config.galaxyline-config'
 require 'config.matchup-config'
 require 'config.nvim-tree-config'   
 -- require 'config.zen-config'      -- TODO configure zen mode
+require 'config.latex-live-preview-config'
 
 -- require 'lsp.lua-lsp'
 require 'lsp.python-lsp'

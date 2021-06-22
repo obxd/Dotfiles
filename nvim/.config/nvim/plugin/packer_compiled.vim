@@ -84,14 +84,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/obxd/.local/share/nvim/site/pack/packer/start/gruvbox-material"
   },
-  ["jellybeans.vim"] = {
-    loaded = true,
-    path = "/home/obxd/.local/share/nvim/site/pack/packer/start/jellybeans.vim"
-  },
-  ["nord-vim"] = {
-    loaded = true,
-    path = "/home/obxd/.local/share/nvim/site/pack/packer/start/nord-vim"
-  },
   ["nvim-autopairs"] = {
     loaded = true,
     path = "/home/obxd/.local/share/nvim/site/pack/packer/start/nvim-autopairs"
@@ -128,10 +120,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/obxd/.local/share/nvim/site/pack/packer/start/nvim-web-devicons"
   },
-  ["onedark.vim"] = {
-    loaded = true,
-    path = "/home/obxd/.local/share/nvim/site/pack/packer/start/onedark.vim"
-  },
   ["packer.nvim"] = {
     loaded = true,
     path = "/home/obxd/.local/share/nvim/site/pack/packer/start/packer.nvim"
@@ -148,17 +136,13 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/obxd/.local/share/nvim/site/pack/packer/start/quick-scope"
   },
-  ["space-vim-dark"] = {
-    loaded = true,
-    path = "/home/obxd/.local/share/nvim/site/pack/packer/start/space-vim-dark"
-  },
   ["trouble.nvim"] = {
     loaded = true,
     path = "/home/obxd/.local/share/nvim/site/pack/packer/start/trouble.nvim"
   },
-  ["vim-gotham"] = {
+  ["vim-latex-live-preview"] = {
     loaded = true,
-    path = "/home/obxd/.local/share/nvim/site/pack/packer/start/vim-gotham"
+    path = "/home/obxd/.local/share/nvim/site/pack/packer/start/vim-latex-live-preview"
   },
   ["vim-matchup"] = {
     loaded = true,
