@@ -1,0 +1,7 @@
+{
+    "name": "ff2mpv",
+    "description": "ff2mpv's external manifest",
+    "path": "/home/obxd/Dotfiles/mozilla/ff2mpv.py",
+    "type": "stdio",
+    "allowed_extensions": ["ff2mpv@yossarian.net"]
+}

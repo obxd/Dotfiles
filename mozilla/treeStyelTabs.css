@@ -1,0 +1,11 @@
+tab:not(:hover) > .closebox {
+  display: none;
+}
+
+.closebox:hover {
+  font-weight: 900;
+}
+
+.tab, .tabs, body, #background {
+  background: #F5F6F7; /* #F5F6F7; */
+}

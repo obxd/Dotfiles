@@ -1,0 +1,22 @@
+[Added Associations]
+application/pdf=org.pwmt.zathura.desktop;
+application/pdf=firefox.desktop;
+x-scheme-handler/tg=userapp-Telegram Desktop-14IK40.desktop;
+
+[Default Applications]
+application/json=editor.desktop
+application/pdf=org.pwmt.zathura.desktop;
+image/gif=mpv_image_gif.desktop;
+image/jpeg=sxiv.desktop;
+image/png=sxiv.desktop;
+inode/directory=lf.desktop
+text/html=firefox.desktop;
+text/plain=editor.desktop;
+text/x-shellscript=editor.desktop;
+text/xml=firefox.desktop;
+video/mp4=mpv.desktop;
+video/x-matroska=mpv.desktop;
+x-scheme-handler/ftp=firefox.desktop;
+x-scheme-handler/http=firefox.desktop;
+x-scheme-handler/https=firefox.desktop;
+x-scheme-handler/tg=userapp-Telegram Desktop-14IK40.desktop

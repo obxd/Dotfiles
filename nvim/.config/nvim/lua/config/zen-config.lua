@@ -1,0 +1,23 @@
+-- -- setup for TrueZen.nvim
+-- require("true-zen").setup({
+--   true_false_commands = false,
+--   cursor_by_mode = false,
+-- 
+--   ataraxis = {
+--     ideal_writing_area_width = 0,
+--     just_do_it_for_me = false,
+--     left_padding = 40,
+--     right_padding = 40,
+--     top_padding = 0,
+--     bottom_padding = 0,
+--     custome_bg = "",
+--     disable_bg_configuration = false,
+--     disable_fillchars_configuration = false,
+--     keep_default_fold_fillchars = true,
+--     force_when_plus_one_window = false,
+--     force_hide_statusline = true,
+--     quit_untoggles_ataraxis = true
+--   }
+-- })
+-- 
+-- -- ':TZAtaraxis'

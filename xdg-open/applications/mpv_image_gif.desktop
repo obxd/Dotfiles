@@ -1,0 +1,6 @@
+[Desktop Entry]
+Type=Application
+Name=MpvImageGif
+Comment=mpv open gif and looping over it
+Exec=mpv --loop=inf %U
+Terminal=true

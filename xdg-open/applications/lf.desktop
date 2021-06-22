@@ -1,0 +1,6 @@
+[Desktop Entry]
+Type=Application
+Name=Lf
+Comment=file manager
+Exec=lf
+Terminal=true

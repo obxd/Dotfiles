@@ -1,0 +1,25 @@
+unbind-key j
+unbind-key k
+unbind-key h
+unbind-key H
+unbind-key L
+unbind-key c
+unbind-key ,
+
+# Feed settings
+prepopulate-query-feeds yes
+refresh-on-startup yes
+
+macro m set browser "mpv '%u' </dev/null &>/dev/null &"; open-in-browser; set browser "xdg-open"
+
+
+# bind keys
+bind-key ; macro-prefix
+bind-key h quit
+bind-key BACKSPACE quit
+bind-key j down
+bind-key k up
+bind-key l open
+bind-key H prev-feed
+bind-key L next-feed
+bind-key c toggle-show-read-feeds
