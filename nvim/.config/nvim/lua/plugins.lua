@@ -60,6 +60,9 @@ return require('packer').startup(function()
   -- Latex preview
   use "xuhdev/vim-latex-live-preview"
 
+  -- Markdown preview with Glow
+  use "npxbr/glow.nvim"
+
   -- Telescope TODO play with Telescoping Jonson
 end)
 

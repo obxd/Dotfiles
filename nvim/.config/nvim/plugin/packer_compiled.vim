@@ -80,6 +80,10 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/obxd/.local/share/nvim/site/pack/packer/start/galaxyline.nvim"
   },
+  ["glow.nvim"] = {
+    loaded = true,
+    path = "/home/obxd/.local/share/nvim/site/pack/packer/start/glow.nvim"
+  },
   ["gruvbox-material"] = {
     loaded = true,
     path = "/home/obxd/.local/share/nvim/site/pack/packer/start/gruvbox-material"
