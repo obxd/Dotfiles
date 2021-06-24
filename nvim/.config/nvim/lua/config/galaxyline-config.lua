@@ -1,8 +1,22 @@
 -- https://github.com/glepnir/galaxyline.nvim
 local gl = require('galaxyline')
-local colors = require('galaxyline.theme').default
 local condition = require('galaxyline.condition')
 local gls = gl.section
+
+colors ={
+  bg =       '#32302f',
+  fg =       '#bbc2cf',
+  yellow =   '#ECBE7B',
+  cyan =     '#008080',
+  darkblue = '#081633',
+  green =    '#98be65',
+  orange =   '#FF8800',
+  violet =   '#a9a1e1',
+  magenta =  '#c678dd',
+  blue =     '#51afef';
+  red =      '#ec5f67';
+}
+
 gl.short_line_list = {'NvimTree','vista','dbui','packer'}
 
 gls.left[1] = {
