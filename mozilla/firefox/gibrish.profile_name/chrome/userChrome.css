@@ -5,6 +5,24 @@
   --toolmenubar-height: -65px; /* sum of previous two */
 }
 
+/* Cooooloooors */
+#navigator-toolbox{
+  color:     #ff6e67!important;
+  background:#15141a !important;
+}
+#nav-bar{
+  color:     #ff6e67!important;
+  background:#15141a !important;
+}
+#urlbar-background{
+  background:   #15141a !important;
+  border-color: #b5538b !important;
+}
+#urlbar{
+  color: #8be9fd!important;
+}
+
+
 /* show bookmarks toolbar on new tab only */
 #main-window #PersonalToolbar {
   visibility: collapse !important;
