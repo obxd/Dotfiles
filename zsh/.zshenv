@@ -48,6 +48,9 @@ export PATH="$HOME/.local/bin:$PATH"
 # Node version manager
 source /usr/share/nvm/init-nvm.sh 
 
+# QT  
+export QT_STYLE_OVERRIDE=kvantum
+
 # lf icons
 export LF_ICONS="\
 tw=:\
