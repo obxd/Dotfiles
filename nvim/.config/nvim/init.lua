@@ -22,8 +22,7 @@ require 'config.glow-config'
 require 'lsp.python-lsp'
 require 'lsp.bash-lsp'
 require 'lsp.haskell-lsp'
--- TODO add lsp for haskell 
--- TODO add lsp for Jobscript (javasctipt and typescript)
+require 'lsp.js-ts-lsp'
 -- TODO add lsp for lua
 -- TODO add lsp for c 
 
