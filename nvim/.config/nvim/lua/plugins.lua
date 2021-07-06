@@ -63,6 +63,8 @@ return require('packer').startup(function()
   -- Markdown preview with Glow
   use "npxbr/glow.nvim"
 
+  -- FireNvim
+  use { 'glacambre/firenvim', run = function() vim.fn['firenvim#install'](0) end }
   -- Telescope TODO play with Telescoping Jonson
 end)
 

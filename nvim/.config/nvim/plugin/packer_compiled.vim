@@ -76,6 +76,10 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/obxd/.local/share/nvim/site/pack/packer/start/barbar.nvim"
   },
+  firenvim = {
+    loaded = true,
+    path = "/home/obxd/.local/share/nvim/site/pack/packer/start/firenvim"
+  },
   ["galaxyline.nvim"] = {
     loaded = true,
     path = "/home/obxd/.local/share/nvim/site/pack/packer/start/galaxyline.nvim"
