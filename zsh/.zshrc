@@ -95,7 +95,7 @@ clear
 [ -f "$HOME/.aliasrc" ] && source "$HOME/.aliasrc" # aliases
 source /usr/share/fzf/completion.zsh
 source /usr/share/fzf/key-bindings.zsh # <CTRL+T> files+folders <CTRL+R> history <ALT+C> fuzzy cd
-source ~/.local/share/zsh/pugins/fast-syntax-highlighting/fast-syntax-highlighting.plugin.zsh # Load syntax highlighting; should be last.
+source ~/.local/share/zsh/plugins/fast-syntax-highlighting/fast-syntax-highlighting.plugin.zsh # Load syntax highlighting; should be last.
 #}}} 
 
 # vim: set foldmethod=marker:
