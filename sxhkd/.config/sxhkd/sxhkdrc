@@ -1,0 +1,101 @@
+#===============#
+# APPLICATIONS  #
+#===============#
+
+# terminal emulator
+super + Return
+	urxvt
+
+# program launcher
+super + @space
+	dmenu_run
+
+super + {F1,F2,F3}
+	{laptop_1s.sh,home_1s.sh,home_2s.sh}
+
+super + F4
+	/bin/ls -d -1 '/home/obxd/Pictures/dark_wallpepers'/* | shuf -n 1 | xargs -I % xwallpaper --maximize '%' 
+
+super + b
+	firefox
+
+# make sxhkd reload its configuration files:
+super + shift + r
+	pkill -USR1 -x sxhkd && dunstify "BSPWM" "sxhkd reloaded" 
+
+Print
+  flameshot gui
+
+XF86AudioRaiseVolume
+  pactl set-sink-volume 0 +5%
+
+XF86AudioLowerVolume
+  pactl set-sink-volume 0 -5%
+
+XF86AudioMute
+  pactl set-sink-mute 0 toggle
+
+#===============#
+# BSPWM hotkeys #
+#===============#
+
+# quit/restart bspwm
+super + ctrl + {q,r}
+	bspc { quit,wm -r && dunstify "BSPWM" "bspwm reloaded" }
+
+# close and kill
+super + {_,shift + }q
+	bspc node -{c,k}
+
+# alternate btween layouts
+super + n
+  bsp-layout cycle --layouts tiled,tall,monocle
+
+
+# focus next/prev window in the current desktop
+super + {_, shift + } c
+	bspc node -f {next,prev} -n .local
+
+# set the window state   
+super + {t,shift + t,s,f}
+	bspc node -t {\~tiled,\~pseudo_tiled,\~floating,\~fullscreen}
+
+# set the node flag sticky 
+super + ctrl + x
+	bspc node -g sticky
+
+# focus the node in the given direction
+super + {_,shift + }{h,j,k,l}
+	bspc node -{f,s} {west,south,north,east}
+
+# focus the node for the given path jump
+super + {p,b,comma,period}
+	bspc node -f @{parent,brother,first,second}
+
+# focus the next/previous desktop in the current monitor
+super + bracket{left,right}
+	bspc desktop -f {prev,next}.local
+
+# focus the last desktop
+super + Tab
+	bspc desktop -f last
+
+# focus or send to the given desktop
+super + {_,shift + }{1-9,0}
+	bspc {desktop -f,node -d} '^{1-9,10}'
+
+# preselect the direction
+super + ctrl + {h,j,k,l}
+	bspc node -p {west,south,north,east}
+
+# cancel the preselection for the focused node
+super + ctrl + space
+	bspc node -p cancel
+
+# expand a window by moving one of its side outward
+super + alt + {h,j,k,l}
+	bspc node -z {left -20 0,bottom 0 20,top 0 -20,right 20 0}
+
+# contract a window by moving one of its side inward
+super + alt + shift + {h,j,k,l}
+	bspc node -z {right -20 0,top 0 20,bottom 0 -20,left 20 0}
