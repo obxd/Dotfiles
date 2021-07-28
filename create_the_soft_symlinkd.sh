@@ -4,6 +4,8 @@
 # TODO finish this symlinking script
 
 ln -s ~/Dotfiles/alacritty/.config/alacritty ~/.config/alacritty
+ln -s ~/Dotfiles/xmonad/.xmonad.hs           ~/.xmonad/xmonad.hs
+
 ln -s ~/Dotfiles/aliasrc                     ~/.aliasrc
 ln -s ~/Dotfiles/bash/.bash_logout           ~/.bash_logout
 ln -s ~/Dotfiles/bash/.bash_profile          ~/.bash_profile
@@ -18,7 +20,6 @@ ln -s ~/Dotfiles/picom/.config/picom         ~/.config/picom
 ln -s ~/Dotfiles/xdg-open/applications       ~/.local/share/applications
 ln -s ~/Dotfiles/xdg-open/mimeapps.list      ~/.config/mimeapps.list
 ln -s ~/Dotfiles/xinitrc                     ~/.xinitrc
-ln -s ~/Dotfiles/xmonad/.xmonad.hs           ~/.xmonad/xmonad.hs
 ln -s ~/Dotfiles/Xresources                  ~/.Xresources
 ln -s ~/Dotfiles/zathura/.config/zathura     ~/.config/zathura
 ln -s ~/Dotfiles/zsh/.zprofile               ~/.zprofile
