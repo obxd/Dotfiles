@@ -1,6 +1,7 @@
 Xcursor.theme: Layan-border-cursors
 Xcursor.size:  32
 
+
 ! monokai
 ! special
 *.foreground:   #f1ebeb
@@ -49,7 +50,7 @@ URxvt*font: xft:Anonymice Nerd Font Mono:size=14
 URxvt.scrollBar:	false
 URxvt.saveLines:	65535
 URxvt.depth: 32
-URxvt.background: rgba:0000/0000/0000/0000
+URxvt.background: rgba:0000/0000/0000/EEEE
 
 ! urxvt extentions
 ! ----------------
