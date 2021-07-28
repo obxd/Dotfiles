@@ -32,9 +32,14 @@ if [ -d /etc/X11/xinit/xinitrc.d ] ; then
  unset f
 fi
 
-# Turn off screen blanking
-xset s off && xset -dpms
+xset s off && xset -dpms # Turn off screen blanking
 xsetroot -cursor_name left_ptr
-# faster auto repeate rate
-# xset r rate 250 25
-exec xmonad
+picom --experimental-backends &
+wallpeper_changer.sh &
+./.config/polybar/launch.sh &
+udiskie -t &
+nm-applet &
+blueman-applet &
+export SXHKD_SHELL="/bin/sh"
+sxhkd &
+exec bspwm
