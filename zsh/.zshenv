@@ -7,20 +7,23 @@
 # Default Apps
 export BROWSER="firefox"
 export EDITOR="nvim"
-export IMAGE="sxiv" # export IMAGE="feh" 
+export IMAGE="sxiv"
 export OPENER="xdg-open"
-export PAGER="less"
+export PAGER="less" 
 export READER="zathura"
-export TERMINAL="kitty"
+export TERMINAL="urxvt"
 export VIDEO="mpv"
 export VISUAL="nvim"
-export WM="xmonad"
+export WM="urxvt"
 
 # XDG 
 export XDG_DATA_HOME=${XDG_DATA_HOME:="$HOME/.local/share"}
 export XDG_CACHE_HOME=${XDG_CACHE_HOME:="$HOME/.cache"}
 export XDG_CONFIG_HOME=${XDG_CONFIG_HOME:="$HOME/.config"}
 export XDG_BIN_HOME=${XDG_BIN_HOME:="$HOME/.local/bin"}
+export XCURSOR_PATH=${XCURSOR_PATH}:~/.local/share/icons
+
+
 
 # Others
 export LESSHISTFILE='-' # Disable less history
@@ -35,11 +38,11 @@ if [ -d $HOME/.screenlayout ]; then
     PATH=$PATH:$HOME/.screenlayout
 fi
 
-if [ -d $HOME/scripts ]; then
-    PATH=$PATH:$HOME/scripts
+if [ -d $HOME/.local/bin ]; then
+    PATH=$HOME/.local/bin:$PATH
 fi
 
-export PATH="$HOME/.local/bin:$PATH" 
+export PATH
 
 # --------------------- #
 #  Application related
@@ -50,6 +53,12 @@ source /usr/share/nvm/init-nvm.sh
 
 # QT  
 export QT_STYLE_OVERRIDE=kvantum
+
+# less
+export LESS='-R --use-color -Dd+r$Du+b'
+
+# man pages
+export MANPAGER="less -R --use-color -Dd+r -Du+b"
 
 # lf icons
 export LF_ICONS="\
