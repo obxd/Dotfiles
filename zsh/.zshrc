@@ -80,12 +80,16 @@ bindkey '^e' edit-command-line
 autoload -U colors && colors	# Load colors
 PS1="%B%{$fg[red]%}[%{$fg[yellow]%}%n%{$fg[green]%}@%{$fg[blue]%}%M %{$fg[magenta]%}%~%{$fg[red]%}]%{$reset_color%}$%b "
 
-#picture=$(ls -d -1 '/home/obxd/Pictures/waifus/waifus/images'/* | shuf -n 1)
-#~/scripts/random_color_art # color thingy
-#~/scripts/image-show 2 1 40 40 $picture
-picture=$(ls -d -1 '/home/obxd/Pictures/anime/minimalisic_art_anime'/* | shuf -n 1)
-neofetch --crop_mod fit --ueberzug $picture
-clear
+# if inside tmux
+
+if [ -n "${TMUX}" ]; then
+  #picture=$(ls -d -1 '/home/obxd/Pictures/waifus/waifus/images'/* | shuf -n 1)
+  #~/scripts/random_color_art # color thingy
+  #~/scripts/image-show 2 1 40 40 $picture
+  picture=$(ls -d -1 '/home/obxd/Pictures/anime/minimalisic_art_anime'/* | shuf -n 1)
+  neofetch --crop_mod fit --ueberzug $picture
+  clear
+fi
 #}}}
 
 # ------ #
