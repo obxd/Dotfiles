@@ -98,4 +98,15 @@ source /usr/share/fzf/key-bindings.zsh # <CTRL+T> files+folders <CTRL+R> history
 source ~/.local/share/zsh/plugins/fast-syntax-highlighting/fast-syntax-highlighting.plugin.zsh # Load syntax highlighting; should be last.
 #}}} 
 
-# vim: set foldmethod=marker:
+# ------ #
+# Tmux   #
+# ------ #
+#{{{
+# if tmux is executable and not inside a tmux session
+#  start a new session
+[ -x "$(command -v tmux)" ] \
+  && [ -z "${TMUX}" ] \
+  && { tmux; } >/dev/null 2>&1
+# }}}
+
+# vim: foldmethod=marker

@@ -5,7 +5,7 @@
 # /____|____/|_| |_|_____|_| \_|  \_/   
 #
 # Default Apps
-export BROWSER="firefox"
+export BROWSER="chromium"
 export EDITOR="nvim"
 export IMAGE="sxiv"
 export OPENER="xdg-open"

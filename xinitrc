@@ -32,8 +32,11 @@ if [ -d /etc/X11/xinit/xinitrc.d ] ; then
  unset f
 fi
 
+
 xset s off && xset -dpms # Turn off screen blanking
 xsetroot -cursor_name left_ptr
+[ ! -s /tmp/mpd.pid ] && mpd & # MPD daemon start (if no other user instance exists)
+mpDris2 &
 picom --experimental-backends &
 wallpeper_changer.sh &
 ./.config/polybar/launch.sh &

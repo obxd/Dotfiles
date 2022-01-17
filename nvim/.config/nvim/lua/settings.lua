@@ -2,10 +2,10 @@ local o = vim.o
 
 vim.cmd('filetype plugin on')         -- filetype detection
 o.autoread = true                     -- Set to auto read when a file is changed from the outside
-o.backup = false                  
+o.backup = false
 o.clipboard = "unnamedplus"           -- Copy paste between vim and everything else
 o.cmdheight = 2                       -- More space for displaying messages
-o.cursorline = true                   -- Enable highlighting of the current line
+o.cursorline = false                  -- Enable highlighting of the current line
 o.errorbells = false                  -- no anotying beep
 o.fileencoding = "utf-8"              -- Set utf8 as standard encoding
 o.fileformat = "unix"                 -- unix file format
@@ -16,7 +16,9 @@ o.incsearch = true
 o.magic = true
 o.mouse = "a"                         -- Enebale mouse
 o.number = true                      -- numbered lines
-o.pumheight = 10                      -- Makes popup menu smaller
+o.pumheight = 10                   -- Makes popup menu smaller
+o.pumblend = 20                      -- Makes popup menu transparent
+o.winblend = 20                      -- Makes window transparent
 o.relativenumber = true              -- relative number
 o.ruler = true                        -- Always show current position
 o.shortmess = o.shortmess..'c'        -- Don't pass messages to |ins-completion-menu|.
@@ -31,12 +33,14 @@ o.syntax = "on"
 o.termguicolors = true                -- set term gui colors most terminals support this
 o.titlestring="%<%F%=%l/%L - nvim"
 o.title = true
-o.undodir = "~/.cache/vim/undo"       -- no anoying mess in folders
+o.undodir = vim.fn.getenv("HOME") .. "/.cache/vim/undo" -- no anoying mess in folders
+o.undofile = true
 o.updatetime = 300                    -- refresh time
-o.wildmenu = true                     -- Turn on the Wild menu
-o.wildmode="longest:list:full"        -- autocompletion
+-- o.wildmenu = true                     -- Turn on the Wild menu
+-- o.wildmode="longest:list:full"        -- autocompletion
 o.wrap = false
-o.writebackup = false             
+o.writebackup = false
+o.so = 10
 
 -- shift and tabs:
 o.autoindent=true

@@ -4,8 +4,10 @@
 # TODO finish this symlinking script
 
 ln -s ~/Dotfiles/alacritty/.config/alacritty ~/.config/alacritty
+ln -s ~/Dotfiles/alacritty/.config/alacritty/alacritty_color_source ~/.local/bin/alacritty_color_source 
+ln -s ~/Dotfiles/Xresources_themes ~/.config/Xresources_themes
 ln -s ~/Dotfiles/xmonad/.xmonad.hs           ~/.xmonad/xmonad.hs
-
+ln -s ~/obxd/Dotfiles/tmux/.config/tmux      ~/.config/tmux
 ln -s ~/Dotfiles/aliasrc                     ~/.aliasrc
 ln -s ~/Dotfiles/bash/.bash_logout           ~/.bash_logout
 ln -s ~/Dotfiles/bash/.bash_profile          ~/.bash_profile
@@ -30,6 +32,9 @@ ln -s ~/Dotfiles/lf/.config/lf               ~/.config/lf
 ln -s ~/Dotfiles/lf/.local/bin/lf            ~/.local/bin/lf
 ln -s ~/Dotfiles/lf/.local/bin/preview-image ~/.local/bin/preview-image
 ln -s ~/Dotfiles/lf/.local/bin/pv            ~/.local/bin/pv
+
+ln -s ~/Dotfiles/mpd/.config/mpd             ~/.config/mpd
+ln -s ~/Dotfiles/ncmpcpp/.config/ncmpcpp     ~/.config/ncmpcpp
 
 # ln -s ~/Dotfiles/firefox/prefs.js            ~/.mozilla/firefox/
 # ln -s ~/Dotfiles/firefox/use.js              ~/.mozilla/firefox/

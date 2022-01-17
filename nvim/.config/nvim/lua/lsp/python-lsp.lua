@@ -2,12 +2,12 @@
 --  npm i -g pyright
 --
 
+require 'lsp'
 local PYRIGHT = os.getenv('NVM_BIN') .. "/pyright-langserver"
 
--- Add some linter and formaters: black bandit flake8 pydocstyle...
 require'lspconfig'.pyright.setup {
   cmd = { PYRIGHT , "--stdio"},
-
+  on_attach = on_attach,
   settings = {
     python = {
       analysis = {

@@ -2,11 +2,16 @@ local remap = vim.api.nvim_set_keymap
 local npairs = require('nvim-autopairs')
 
 npairs.setup({
-  disable_filetype = { "TelescopePrompt" },
+  disable_filetype  = { "TelescopePrompt" },
   ignored_next_char = string.gsub([[ [%w%%%'%[%"%.] ]],"%s+", ""),
-  enable_moveright = true,
+  enable_moveright  = true,
   enable_afterquote = false,
-  check_ts = false,
+  check_ts          = false,
+})
+
+require("nvim-autopairs.completion.compe").setup({
+  map_cr = true, --  map <CR> on insert mode
+  map_complete = true -- it will auto insert `(` after select function or method item
 })
 
 _G.MUtils= {}
@@ -26,3 +31,4 @@ MUtils.completion_confirm=function()
 end
 
 remap('i' , '<CR>','v:lua.MUtils.completion_confirm()', {expr = true , noremap = true})
+

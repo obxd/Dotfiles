@@ -3,7 +3,6 @@
 pgrep -x sxhkd > /dev/null || sxhkd &
 
 
-
 #### BSPWM configuration ####
 
 bspc config automatic_scheme 	            longest_side 

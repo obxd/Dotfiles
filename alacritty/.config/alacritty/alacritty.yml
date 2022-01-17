@@ -57,10 +57,6 @@ window:
   # Values for `decorations`:
   #     - full: Borders and title bar
   #     - none: Neither borders nor title bar
-  #
-  # Values for `decorations` (macOS only):
-  #     - transparent: Title bar, transparent background and title bar buttons
-  #     - buttonless: Title bar, transparent background and no title bar buttons
   #decorations: full
 
   # Startup Mode (changes require restart)
@@ -69,9 +65,6 @@ window:
   #   - Windowed
   #   - Maximized
   #   - Fullscreen
-  #
-  # Values for `startup_mode` (macOS only):
-  #   - SimpleFullscreen
   # startup_mode: Maximized
 
   # Window title
@@ -162,124 +155,42 @@ font:
 
 # If `true`, bold text is drawn using the bright color variants.
 draw_bold_text_with_bright_colors: false
-
+#
+# Colors
 colors:
+  # Default colors
   primary:
-    background: '0x282a36'
-    foreground: '0xf8f8f2'
+    background: '0x272822'
+    foreground: '0xf1ebeb'
+
   cursor:
     text: CellBackground
     cursor: CellForeground
   vi_mode_cursor:
     text: CellBackground
     cursor: CellForeground
-  search:
-    matches:
-      foreground: '0x44475a'
-      background: '0x50fa7b'
-    focused_match:
-      foreground: '0x44475a'
-      background: '0xffb86c'
-    bar:
-      background: '0x282a36'
-      foreground: '0xf8f8f2'
-  line_indicator:
-    foreground: None
-    background: None
-  selection:
-    text: CellForeground
-    background: '0x44475a'
-  normal:
-    black:   '0x000000'
-    red:     '0xff5555'
-    green:   '0x50fa7b'
-    yellow:  '0xf1fa8c'
-    blue:    '0xbd93f9'
-    magenta: '0xff79c6'
-    cyan:    '0x8be9fd'
-    white:   '0xbfbfbf'
-  bright:
-    black:   '0x4d4d4d'
-    red:     '0xff6e67'
-    green:   '0x5af78e'
-    yellow:  '0xf4f99d'
-    blue:    '0xcaa9fa'
-    magenta: '0xff92d0'
-    cyan:    '0x9aedfe'
-    white:   '0xe6e6e6'
-  dim:
-    black:   '0x14151b'
-    red:     '0xff2222'
-    green:   '0x1ef956'
-    yellow:  '0xebf85b'
-    blue:    '0x4d5b86'
-    magenta: '0xff46b0'
-    cyan:    '0x59dffc'
-    white:   '0xe6e6d1'
 
-# Colors (Tomorrow Night)
-#colors:
-  #  background: '#1d1f21'
-  #  foreground: '#c5c8c6'
-  #  dim_foreground: '#828482'
-  #  bright_foreground: '#eaeaea'
-  #cursor:
-  #  text: CellBackground
-  #  cursor: CellForeground
-  #vi_mode_cursor:
-  #  text: CellBackground
-  #  cursor: CellForeground
-  #search:
-    #matches:
-    #  foreground: '#000000'
-    #  background: '#ffffff'
-    #focused_match:
-    #  foreground: '#ffffff'
-    #  background: '#000000'
-    #bar:
-    #  background: '#c5c8c6'
-    #  foreground: '#1d1f21'
-  #hints:
-    #start:
-    #  foreground: '#1d1f21'
-    #  background: '#e9ff5e'
-    #end:
-    #  foreground: '#e9ff5e'
-    #  background: '#1d1f21'
-  #line_indicator:
-  #  foreground: None
-  #  background: None
-  #selection:
-  #  text: CellBackground
-  #  background: CellForeground
-  #normal:
-  #  black:   '#1d1f21'
-  #  red:     '#cc6666'
-  #  green:   '#b5bd68'
-  #  yellow:  '#f0c674'
-  #  blue:    '#81a2be'
-  #  magenta: '#b294bb'
-  #  cyan:    '#8abeb7'
-  #  white:   '#c5c8c6'
-  #bright:
-  #  black:   '#666666'
-  #  red:     '#d54e53'
-  #  green:   '#b9ca4a'
-  #  yellow:  '#e7c547'
-  #  blue:    '#7aa6da'
-  #  magenta: '#c397d8'
-  #  cyan:    '#70c0b1'
-  #  white:   '#eaeaea'
-  #dim:
-  #  black:   '#131415'
-  #  red:     '#864343'
-  #  green:   '#777c44'
-  #  yellow:  '#9e824c'
-  #  blue:    '#556a7d'
-  #  magenta: '#75617b'
-  #  cyan:    '#5b7d78'
-  #  white:   '#828482'
-  #indexed_colors: []
+  # Normal colors
+  normal:
+    black:   '0x48483e'
+    red:     '0xdc2566'
+    green:   '0x8fc029'
+    yellow:  '0xd4c96e'
+    blue:    '0x55bcce'
+    magenta: '0x9358fe'
+    cyan:    '0x56b7a5'
+    white:   '0xacada1'
+
+  # Bright colors
+  bright:
+    black:   '0x76715e'
+    red:     '0xfa2772'
+    green:   '0xa7e22e'
+    yellow:  '0xe7db75'
+    blue:    '0x66d9ee'
+    magenta: '0xae82ff'
+    cyan:    '0x66efd5'
+    white:   '0xcfd0c2'
 
 # Bell
 #
@@ -326,7 +237,7 @@ bell:
 #
 # Window opacity as a floating point number from `0.0` to `1.0`.
 # The value `0.0` is completely transparent and `1.0` is opaque.
-background_opacity: 0.0
+background_opacity: 0.85
 
 selection:
   # This string contains all characters that are used as separators for
@@ -385,9 +296,7 @@ live_config_reload: true
 # shell.
 #
 # Default:
-#   - (macOS) /bin/bash --login
 #   - (Linux/BSD) user login shell
-#   - (Windows) powershell
 shell:
   program: /bin/zsh
 #  args:
@@ -635,10 +544,6 @@ mouse_bindings:
 #   - SearchHistoryNext
 #       Go to the next regex in the search history.
 #
-# - macOS exclusive actions:
-#   - ToggleSimpleFullscreen
-#       Enter fullscreen without occupying another space.
-#
 # - Linux/BSD exclusive actions:
 #
 #   - CopySelection
@@ -760,7 +665,7 @@ mouse_bindings:
   #- { key: Return,                mode: Search|~Vi, action: SearchFocusNext       }
   #- { key: Return, mods: Shift,   mode: Search|~Vi, action: SearchFocusPrevious   }
 
-  # (Windows, Linux, and BSD only)
+  # (Linux, and BSD)
   #- { key: V,              mods: Control|Shift, mode: ~Vi,        action: Paste            }
   #- { key: C,              mods: Control|Shift,                   action: Copy             }
   #- { key: F,              mods: Control|Shift, mode: ~Search,    action: SearchForward    }
@@ -773,31 +678,6 @@ mouse_bindings:
   #- { key: NumpadAdd,      mods: Control,                         action: IncreaseFontSize }
   #- { key: Minus,          mods: Control,                         action: DecreaseFontSize }
   #- { key: NumpadSubtract, mods: Control,                         action: DecreaseFontSize }
-
-  # (Windows only)
-  #- { key: Return,   mods: Alt,           action: ToggleFullscreen }
-
-  # (macOS only)
-  #- { key: K,              mods: Command, mode: ~Vi|~Search, chars: "\x0c"                 }
-  #- { key: K,              mods: Command, mode: ~Vi|~Search, action: ClearHistory          }
-  #- { key: Key0,           mods: Command,                    action: ResetFontSize         }
-  #- { key: Equals,         mods: Command,                    action: IncreaseFontSize      }
-  #- { key: Plus,           mods: Command,                    action: IncreaseFontSize      }
-  #- { key: NumpadAdd,      mods: Command,                    action: IncreaseFontSize      }
-  #- { key: Minus,          mods: Command,                    action: DecreaseFontSize      }
-  #- { key: NumpadSubtract, mods: Command,                    action: DecreaseFontSize      }
-  #- { key: V,              mods: Command,                    action: Paste                 }
-  #- { key: C,              mods: Command,                    action: Copy                  }
-  #- { key: C,              mods: Command, mode: Vi|~Search,  action: ClearSelection        }
-  #- { key: H,              mods: Command,                    action: Hide                  }
-  #- { key: H,              mods: Command|Alt,                action: HideOtherApplications }
-  #- { key: M,              mods: Command,                    action: Minimize              }
-  #- { key: Q,              mods: Command,                    action: Quit                  }
-  #- { key: W,              mods: Command,                    action: Quit                  }
-  #- { key: N,              mods: Command,                    action: SpawnNewInstance      }
-  #- { key: F,              mods: Command|Control,            action: ToggleFullscreen      }
-  #- { key: F,              mods: Command, mode: ~Search,     action: SearchForward         }
-  #- { key: B,              mods: Command, mode: ~Search,     action: SearchBackward        }
 
 debug:
   # Display the time it takes to redraw each frame.

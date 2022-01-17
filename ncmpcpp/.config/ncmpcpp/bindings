@@ -1,0 +1,83 @@
+def_key "1"
+  show_playlist
+
+def_key "2"
+  show_browser
+
+def_key "2"
+  change_browse_mode
+
+def_key "3"
+  show_search_engine
+
+def_key "3"
+  reset_search_engine
+
+def_key "4"
+  show_media_library
+
+def_key "4"
+  toggle_media_library_columns_mode
+
+def_key "5"
+  show_playlist_editor
+
+def_key "6"
+  show_tag_editor
+
+def_key "7"
+  show_outputs
+
+def_key "8"
+  show_visualizer
+
+def_key "="
+  show_clock
+
+def_key "j"
+    scroll_down
+def_key "k"
+    scroll_up
+def_key "ctrl-u"
+    page_up
+#push_characters "kkkkkkkkkkkkkkk"
+def_key "ctrl-d"
+    page_down
+#push_characters "jjjjjjjjjjjjjjj"
+def_key "u"
+    page_up
+#push_characters "kkkkkkkkkkkkkkk"
+def_key "d"
+    page_down
+#push_characters "jjjjjjjjjjjjjjj"
+def_key "h"
+    previous_column
+def_key "l"
+    next_column
+def_key "."
+    show_lyrics
+def_key "n"
+    next_found_item
+def_key "N"
+    previous_found_item
+# not used but bound
+def_key "J"
+    move_sort_order_down
+def_key "K"
+    move_sort_order_up
+def_key "h"
+  jump_to_parent_directory
+def_key "l"
+  enter_directory
+def_key "l"
+  run_action
+def_key "l"
+  play_item
+def_key "U"
+  update_database
+def_key "G"
+  move_end
+def_key "g"
+  move_home
+def_key "x"
+  delete_playlist_items
