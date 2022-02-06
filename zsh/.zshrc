@@ -80,16 +80,12 @@ bindkey '^e' edit-command-line
 autoload -U colors && colors	# Load colors
 PS1="%B%{$fg[red]%}[%{$fg[yellow]%}%n%{$fg[green]%}@%{$fg[blue]%}%M %{$fg[magenta]%}%~%{$fg[red]%}]%{$reset_color%}$%b "
 
-# if inside tmux
-
-if [ -n "${TMUX}" ]; then
-  #picture=$(ls -d -1 '/home/obxd/Pictures/waifus/waifus/images'/* | shuf -n 1)
-  #~/scripts/random_color_art # color thingy
-  #~/scripts/image-show 2 1 40 40 $picture
-  picture=$(ls -d -1 '/home/obxd/Pictures/anime/minimalisic_art_anime'/* | shuf -n 1)
-  neofetch --crop_mod fit --ueberzug $picture
-  clear
-fi
+#picture=$(ls -d -1 '/home/obxd/Pictures/waifus/waifus/images'/* | shuf -n 1)
+#~/scripts/random_color_art # color thingy
+#~/scripts/image-show 2 1 40 40 $picture
+picture=$(ls -d -1 '/home/obxd/Pictures/anime/minimalisic_art_anime'/* | shuf -n 1)
+neofetch --crop_mod fit --ueberzug $picture
+clear
 #}}}
 
 # ------ #
@@ -101,16 +97,5 @@ source /usr/share/fzf/completion.zsh
 source /usr/share/fzf/key-bindings.zsh # <CTRL+T> files+folders <CTRL+R> history <ALT+C> fuzzy cd
 source ~/.local/share/zsh/plugins/fast-syntax-highlighting/fast-syntax-highlighting.plugin.zsh # Load syntax highlighting; should be last.
 #}}} 
-
-# ------ #
-# Tmux   #
-# ------ #
-#{{{
-# if tmux is executable and not inside a tmux session
-#  start a new session
-[ -x "$(command -v tmux)" ] \
-  && [ -z "${TMUX}" ] \
-  && { tmux; } >/dev/null 2>&1
-# }}}
 
 # vim: foldmethod=marker
