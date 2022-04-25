@@ -34,6 +34,10 @@ zstyle ':completion:*' menu select
 zmodload zsh/complist
 compinit -d ~/.cache/zsh/zcompdump-$ZSH_VERSION
 _comp_options+=(globdots)		# Include hidden files.
+
+# podman completion
+autoload -U compinit
+compinit
 # }}}
 
 # -------------- #

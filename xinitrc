@@ -39,10 +39,8 @@ xsetroot -cursor_name left_ptr
 mpDris2 &
 picom --experimental-backends &
 wallpeper_changer.sh &
-./.config/polybar/launch.sh &
 udiskie -t &
 nm-applet &
 blueman-applet &
-export SXHKD_SHELL="/bin/sh"
-sxhkd &
-exec bspwm
+pgrep bar.sh &>/dev/null || bar.sh
+exec dwm
