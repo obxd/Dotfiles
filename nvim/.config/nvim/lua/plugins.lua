@@ -17,7 +17,6 @@ use 'nvim-lua/popup.nvim'
 use 'hrsh7th/nvim-compe'
 use 'folke/trouble.nvim'
 use 'hrsh7th/vim-vsnip'  -- TODO  play with vim-vsnip config
-use "windwp/nvim-autopairs"
 -- Icons
 use 'kyazdani42/nvim-web-devicons'
 -- Colors
@@ -32,42 +31,18 @@ use 'unblevable/quick-scope'
 use 'kyazdani42/nvim-tree.lua'
 -- Undo tree
 use "mbbill/undotree"
--- Status Line and Bufferline
+-- Bufferline
 use 'glepnir/galaxyline.nvim'
 use 'romgrk/barbar.nvim'
+-- Zen mode
+use "folke/zen-mode.nvim"
+use "folke/twilight.nvim"
 -- Comments
 use "terrortylor/nvim-comment"
 -- Tree Shitter related
-use {"nvim-treesitter/nvim-treesitter", run = ":TSUpdate"}
-use 'nvim-treesitter/playground' -- TODO play with treeshitter playground plugin
--- better %
+use {'nvim-treesitter/nvim-treesitter', run = ':TSUpdate' }
 use 'andymass/vim-matchup'
--- auto taging
-use "windwp/nvim-ts-autotag"
--- Latex preview
--- use "xuhdev/vim-latex-live-preview"
--- Markdown preview with Glow
--- use "npxbr/glow.nvim"
+-- Auto pair
+use 'windwp/nvim-autopairs'
 end)
 
--- Telescope TODO play with Telescoping Jonson
---[[ TODO more cool stuff to check
-  'nvim-telescope/telescope.nvim'
-  "nvim-telescope/telescope-fzy-native.nvim"
-  'nvim-telescope/telescope-media-files.nvim'
-  "nvim-telescope/telescope-project.nvim"
-  'kevinhwang91/nvim-bqf'
-  'glepnir/lspsaga.nvim'
-  'kosayoda/nvim-lightbulb'
-  'mfussenegger/nvim-dap'
-  'mfussenegger/nvim-jdtls'
-  'onsails/lspkind-nvim'
-   "Pocco81/TrueZen.nvim"
-  'ahmedkhalf/lsp-rooter.nvim'
-  "kabouzeid/nvim-lspinstall" <-- dont think i need
-  "rafamadriz/friendly-snippets"
-  'airblade/vim-rooter'
-  "folke/which-key.nvim",
-  'f-person/git-blame.nvim'
-  'lewis6991/gitsigns.nvim'
-]]

@@ -9,7 +9,7 @@ o.cursorline = false                  -- Enable highlighting of the current line
 o.errorbells = false                  -- no anotying beep
 o.fileencoding = "utf-8"              -- Set utf8 as standard encoding
 o.fileformat = "unix"                 -- unix file format
-o.hidden = true                       -- keep multiple buffers open 
+o.hidden = true                       -- keep multiple buffers open
 o.ignorecase = true
 o.inccommand='split'                  -- Make substitution work in realtime
 o.incsearch = true
@@ -29,7 +29,7 @@ o.smartcase = true
 o.splitbelow = true                   -- Horizontal splits will automatically be below
 o.splitright = true                   -- Vertical splits will automatically be to the right
 o.swapfile = false
-o.syntax = "on" 
+o.syntax = "on"
 o.termguicolors = true                -- set term gui colors most terminals support this
 o.titlestring="%<%F%=%l/%L - nvim"
 o.title = true

@@ -12,12 +12,13 @@
 # ------- #
 # {{{
 setopt autocd		# Automatically cd into typed directory.
+setopt share_history # shared history between sessions
 stty stop undef		# Disable ctrl-s to freeze terminal.
 setopt interactive_comments # ignore comments
 # Cache  
 HISTFILE=~/.cache/zsh/history
-HISTSIZE=1000
-SAVEHIST=1000
+HISTSIZE=100000
+SAVEHIST=100000
 # }}}
 
 # -------------- #
